@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'faq_project.wsgi.application'
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://redis:6379/1',  # Use 'redis' instead of '127.0.0.1'
+        'LOCATION': 'redis://127.0.0.1:6379/1',  # Changed 'redis' to '127.0.0.1'
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
